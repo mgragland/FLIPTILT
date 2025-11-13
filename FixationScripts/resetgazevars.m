@@ -1,0 +1,11 @@
+xeye=[];
+yeye=[];
+xeye_total=[];
+yeye_total=[];
+pupilmaj=[];
+pupilmin=[];
+eyedist=[];
+framecount=0;
+fixation_complete=0;
+count_fixation=0;
+fixating=0;
