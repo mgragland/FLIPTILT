@@ -1,8 +1,8 @@
-function [figure_individual, figure_group]=graph_group_optimize(matrix_results, Save_Files)
+function graph_group_optimize(matrix_results, Save_Files)
 times={'80ms', '200ms', '1s'};
 locations={'Central','Peripheral 5', 'Peripheral 8'}
 timing=NaN(length(times), size(matrix_results,1));
-numColors=size(matrix_results,2);
+numColors=size(matrix_results,1);
 cmap = jet(numColors); % generate a jet colormap
 
 for i=1:size(matrix_results,1)
