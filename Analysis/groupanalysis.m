@@ -14,11 +14,7 @@ for ii = 1:numel(files)
         analysis_left_right
     elseif Location=="Multiple"
         analysis_multiple_inferior_locations
-    elseif Location=='Optimize'
-        addpath('optimize')
-        analysis_optimize
     end
-    matrix_results{ii,1}=results_homotrials;
-    matrix_results{ii,2}=results_heterotrials;
+    matrix_results{ii}=results;
     clearvars -except ii files dataFolder matrix_results Fixation_Stimulus Individual_Group Location
 end

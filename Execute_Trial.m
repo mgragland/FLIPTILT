@@ -63,7 +63,7 @@ Screen('DrawTexture', Window_ID, texture, [], dstRect);
 InstructionTextSize =TextFont_sizeXY;
 Screen('TextSize', Window_ID, InstructionTextSize);
 DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-    Fixation_xCenter-150, Fixation_yCenter, [0,0,0]) %5 DVA
+    Fixation_xCenter-210, Fixation_yCenter, [0,0,0]) %5 DVA
 Screen('FillOval', Window_ID, LowLuminance, ...
     [Fx-FixationSize  Fy-FixationSize  Fx+FixationSize  Fy+ FixationSize]);
 %% Start Trial 

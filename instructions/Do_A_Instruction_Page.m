@@ -63,7 +63,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
         InstructionTextSize =TextFont_sizeXY;
         Screen('TextSize', Window_ID, InstructionTextSize);
           DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-            Fixation_xCenter-150, Fixation_yCenter, [0,0,0]); %5DVA
+            Fixation_xCenter-210, Fixation_yCenter, [0,0,0]); %5DVA
 %         DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
 %             Fixation_xCenter-93, Fixation_yCenter, [0,0,0]) %5DVA
         Screen('FillOval', Window_ID, LowLuminance, ...
@@ -92,7 +92,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
             InstructionTextSize =TextFont_sizeXY;
             Screen('TextSize', Window_ID, InstructionTextSize);
             DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-                Fixation_xCenter-150, Fixation_yCenter, [0,0,0]) %5DVA
+                Fixation_xCenter-210, Fixation_yCenter, [0,0,0]) %5DVA
             Screen('FillOval', Window_ID, LowLuminance, ...
                 [Fx-FixationSize  Fy-FixationSize  Fx+FixationSize  Fy+ FixationSize]);
             texture = Screen('MakeTexture', Window_ID, MaskMatrix);
@@ -108,7 +108,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
             InstructionTextSize =TextFont_sizeXY;
             Screen('TextSize', Window_ID, InstructionTextSize);
             DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-                Fixation_xCenter-150, Fixation_yCenter, [0,0,0]); %5DVA
+                Fixation_xCenter-210, Fixation_yCenter, [0,0,0]); %5DVA
             %         DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
             %             Fixation_xCenter-93, Fixation_yCenter, [0,0,0]) %5DVA
             Screen('FillOval', Window_ID, LowLuminance, ...
@@ -126,7 +126,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
             InstructionTextSize =TextFont_sizeXY;
             Screen('TextSize', Window_ID, InstructionTextSize);
             DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-                Fixation_xCenter-150, Fixation_yCenter, [0,0,0]); %5DVA
+                Fixation_xCenter-210, Fixation_yCenter, [0,0,0]); %5DVA
             Screen('FillOval', Window_ID, LowLuminance, ...
                 [Fx-FixationSize  Fy-FixationSize  Fx+FixationSize  Fy+ FixationSize]);
             Screen('Flip', Window_ID);
@@ -140,7 +140,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
             InstructionTextSize =TextFont_sizeXY;
             Screen('TextSize', Window_ID, InstructionTextSize);
             DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-                Fixation_xCenter-150, Fixation_yCenter, [0,0,0]); %5DVA
+                Fixation_xCenter-210, Fixation_yCenter, [0,0,0]); %5DVA
             Screen('FillOval', Window_ID, LowLuminance, ...
                 [Fx-FixationSize  Fy-FixationSize  Fx+FixationSize  Fy+ FixationSize]);
             texture = Screen('MakeTexture', Window_ID, StimulusMatrix);
@@ -156,7 +156,7 @@ for i=1:length(Instruction.Instruction_TextInfo)
             InstructionTextSize =TextFont_sizeXY;
             Screen('TextSize', Window_ID, InstructionTextSize);
             DrawFormattedText(Window_ID, 'Press any button       for the next trial', ...
-                Fixation_xCenter-150, Fixation_yCenter, [0,0,0]) %5DVA
+                Fixation_xCenter-210, Fixation_yCenter, [0,0,0]) %5DVA
             Screen('FillOval', Window_ID, LowLuminance, ...
                 [Fx-FixationSize  Fy-FixationSize  Fx+FixationSize  Fy+ FixationSize]);
             texture = Screen('MakeTexture', Window_ID, MaskMatrix);

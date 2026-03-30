@@ -66,7 +66,11 @@ if ExperimentInfo.Give_InstructionOrNot==1
     Screen('Flip', Window_ID);
     Wait_For_RightArrowKey
     addpath('practice')
-    practice_trials;
+    accuracy=0;
+    while accuracy<0.8
+        practice_trials;
+    end
+    move_on_from_practice
 end
 
 %% Testing Trials 

@@ -1,10 +1,10 @@
 addpath('practice')
 
 PracticeInfo=ExperimentInfo;
-PracticeInfo.InputParameters.NTrials_EachCondition=[2,1,2,1,2,1]
+PracticeInfo.InputParameters.NTrials_EachCondition=[2,0,2,0,2,0]
 
 for i=1:length(PracticeInfo.InputParameters.NTrials_EachCondition)
-    PracticeInfo.InputParameters.Conditions(i).PresentationDuration=2;
+    PracticeInfo.InputParameters.Conditions(i).PresentationDuration=0.5;
 end
     
 practice_condition_index_sequence= Get_condition_index_sequence(PracticeInfo.InputParameters.NTrials_EachCondition);
@@ -30,22 +30,18 @@ for trial = 1:NTrials
     MaskMatrix = [];
 end
 
-
 ResponseAndMiscInfo = Execute_Trial(StimulusMatrix, MaskMatrix, RingMatrix, condition, PracticeInfo, trial);
     
 Practice_Trial_Info(trial).StimulusInfo = StimulusInfo;
 Practice_Trial_Info(trial).ResponseAndMiscInfo=ResponseAndMiscInfo;
-
 end
-InstructionTextSize =40;
-Screen('TextSize', Window_ID, InstructionTextSize);
-DrawFormattedText(Window_ID, 'Great job! Do you have any questions before proceeding?', ...
-    0.1*Window_Width, 0.1*Window_Width, [0,0,0])
-Screen('Flip', Window_ID);
-Wait_For_RightArrowKey
-DrawFormattedText(Window_ID, 'We will now move on to the testing trials. Press the right button', ...
-    0.1*Window_Width, 0.1*Window_Width, [0,0,0])
-Screen('Flip', Window_ID);
-Wait_For_RightArrowKey;
+% Determine Accuracy
+addpath('Analysis')
+[correct, totalTrials] = practice_trials_analysis(Practice_Trial_Info, ExperimentInfo)
+
+
+accuracy=correct/totalTrials; 
+
+    
 
 

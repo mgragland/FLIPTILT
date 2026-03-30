@@ -42,7 +42,7 @@ NbY = 12; % ZP original= 12
 if NbX ~= NbY
     error('NbX and NbY are unequal to each other, not suitable for this project');
 end
-Disk_Radius_in_Scale = 0.08; % used as a radius for the square side length
+Disk_Radius_in_Scale = 0.12; % used as a radius for the square side length
 
 % NCircles = 2*NbX;
 % Mininum_Circle_Diameter_to_Size=7.5;
@@ -73,23 +73,23 @@ InputParameters.Dot_Radius_To_Size=Dot_Radius_To_Size;
 %end
 
 
-StimulusCenter.x_in_Scale = [0, 0, 0];
+StimulusCenter.x_in_Scale = [0, 0];
 StimulusCenter.y_in_Scale = [0, 0, 0];
 
-StimulusCenter_x_in_Scale = [0, 0, 0];
-StimulusCenter_y_in_Scale = [0, 0, 0];
+StimulusCenter_x_in_Scale = [0, 0];
+StimulusCenter_y_in_Scale = [0, 0];
 
 % FixationCenter_x_in_Scale = [0,     0]; ZP
 % FixationCenter_y_in_Scale = [0.25,  -0.45];
 
-FixationCenter_x_in_Scale = [0, 0, 0]; %MGR
-FixationCenter_y_in_Scale = [0, -0.4533,  -0.3527]; % Inferior Location
+FixationCenter_x_in_Scale = [0, 0]; %MGR
+FixationCenter_y_in_Scale = [0, -0.4178]; % Inferior Location, 8 degree and 5 degree
 
 
 N_Locations =length(StimulusCenter_x_in_Scale);  
 
 
-PresentationDuration_list = [0.08,0.2,1]; %---- the duration of each stimuli before mask onset. ZP original= 0.2
+PresentationDuration_list = [0.2]; %---- the duration of each stimuli before mask onset. ZP original= 0.2
 StimulusChoices_ThisSession_From_Prob_list  = [1, 2, 3, 4];  %--- just the homo pairs, left tilted and right tilted.
 NTrials_ThisDuration = [30];
 NBreaks = 1;
