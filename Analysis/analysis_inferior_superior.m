@@ -5,8 +5,8 @@ response_options=ExperimentInfo.ResponseButtons.Buttons;
 Trials_Answer=zeros(1,length(Trial_Info));
 
 if Fixation_Stimulus=="Fixation"
-    central_y_location=ExperimentInfo.InputParameters.Conditions(2).FixationCenter.y_in_Scale;
-    peripheral_y_location=ExperimentInfo.InputParameters.Conditions(1).FixationCenter.y_in_Scale;
+    central_y_location=ExperimentInfo.InputParameters.Conditions(1).FixationCenter.y_in_Scale;
+    peripheral_y_location=ExperimentInfo.InputParameters.Conditions(2).FixationCenter.y_in_Scale;
 end
 
 central_trials_index=[];

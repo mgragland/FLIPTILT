@@ -14,7 +14,7 @@ ExperimentInfo.Audio = Check_Audio;
 ExperimentInfo.SubjectInfo = Get_SubjectInfo; 
  
 %--- Trial, block, break, numbers, etc. to append to ExperimentInfo.
-ExperimentInfo = Get_ExpMiscInfo(ExperimentInfo);
+ExperimentInfo = Get_ExpMisrcInfo(ExperimentInfo);
 KbName('UnifyKeyNames');
 
 %--- set up eye tracking if needed
@@ -108,6 +108,13 @@ Trial_Info(trial).StimulusInfo = StimulusInfo;
 Trial_Info(trial).ResponseAndMiscInfo=ResponseAndMiscInfo;
 
 end
+
+InstructionTextSize =40;
+Screen('TextSize', Window_ID, InstructionTextSize);
+DrawFormattedText(Window_ID, 'Great Job!! Task is Complete', ...
+    0.1*Window_Width, 0.1*Window_Height, [0,0,0])
+Screen('Flip', Window_ID);
+Wait_For_RightArrowKey
 
 sca; 
 

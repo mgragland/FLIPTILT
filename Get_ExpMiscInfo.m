@@ -6,7 +6,7 @@ Exp_prompt={'Lights on?', ...
     'Give feedback or not to test trials 1 or 0', 'Give instructions or not 1 or 0', 'Debugging or real running mode 1 or 0', 'GazeContingent', 'Response Type', 'Location'};
 Exp_dialog_title='Give_Exp_Information';
 num_lines=1;
-Exp_default_answer={'Indoor dim light',  'none',  '69.8 cm', '39.3 cm',  'Sony GDM-F520', 'a', 'l','0', '1', '0', '0' 'Keyboard', 'Inferior'};
+Exp_default_answer={'Indoor dim light',  'none',  '69.8 cm', '39.3 cm',  'Sony GDM-F520', 'green', 'red','0', '1', '0', '1' 'ResponseBox', 'Inferior'};
 %Exp_default_answer={'Done', 'Indoor dim light', 'yes/irrelevant', 'none', '30 30 30 30', '1 1 1 1', '0', '4', '+', '1', '40 cm', '40.9 cm', '25.6 cm', 'Attwood lab display screen'};
 Exp_info=inputdlg(Exp_prompt,Exp_dialog_title,num_lines,Exp_default_answer);
 RoomLights = Exp_info{1};
