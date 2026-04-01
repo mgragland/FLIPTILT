@@ -1,7 +1,7 @@
 addpath('practice')
 
 PracticeInfo=ExperimentInfo;
-PracticeInfo.InputParameters.NTrials_EachCondition=[2,0,2,0,2,0]
+PracticeInfo.InputParameters.NTrials_EachCondition=[3,4,3,0,0,0]
 
 for i=1:length(PracticeInfo.InputParameters.NTrials_EachCondition)
     PracticeInfo.InputParameters.Conditions(i).PresentationDuration=0.5;

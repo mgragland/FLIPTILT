@@ -14,7 +14,7 @@ ExperimentInfo.Audio = Check_Audio;
 ExperimentInfo.SubjectInfo = Get_SubjectInfo; 
  
 %--- Trial, block, break, numbers, etc. to append to ExperimentInfo.
-ExperimentInfo = Get_ExpMisrcInfo(ExperimentInfo);
+ExperimentInfo = Get_ExpMiscInfo(ExperimentInfo);
 KbName('UnifyKeyNames');
 
 %--- set up eye tracking if needed

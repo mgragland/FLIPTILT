@@ -91,7 +91,7 @@ N_Locations =length(StimulusCenter_x_in_Scale);
 
 PresentationDuration_list = [0.2]; %---- the duration of each stimuli before mask onset. ZP original= 0.2
 StimulusChoices_ThisSession_From_Prob_list  = [1, 2, 3, 4];  %--- just the homo pairs, left tilted and right tilted.
-NTrials_ThisDuration = [30];
+NTrials_ThisDuration = [50];
 NBreaks = 1;
 
 
