@@ -1,7 +1,7 @@
 Analysis_prompt={'Location', 'Individual/Group', 'Fixation/Stimulus Moves', 'Name for Saved Folder'}
 Analysis_dialog_title='Give_Analysis_Information';
 num_lines=1;
-Analysis_default_answer={'Inferior', 'Individual', 'Fixation', 'Save'}
+Analysis_default_answer={'Inferior', 'Group', 'Fixation', 'Save'}
 Analysis_info=inputdlg(Analysis_prompt,Analysis_dialog_title,num_lines,Analysis_default_answer);
 
 Location=Analysis_info{1};

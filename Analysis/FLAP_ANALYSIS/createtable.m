@@ -1,7 +1,7 @@
 function createtable(homotrials, homotrials_error, heterotrials, heterotrials_error, Save_Files)
 
 % Create Location to Save the Figures
-Save_location = "/Users/madelineragland/Desktop/FLIPTILTDATA/Figures";
+Save_location = "C:\Users\raglandm\Desktop\ZP_COLLAB\Flip_Tilt\Figures";
 Full_Save_Path = fullfile(Save_location, Save_Files);
 
 if ~exist(Full_Save_Path, 'dir')

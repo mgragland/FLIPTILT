@@ -10,11 +10,8 @@ for ii = 1:numel(files)
     load(filepath)
     if Location=="Inferior"
         analysis_inferior_superior
-    elseif Location == "Left/Right"
-        analysis_left_right
-    elseif Location=="Multiple"
-        analysis_multiple_inferior_locations
     end
-    matrix_results{ii}=results;
+    matrix_results{ii,1}=results;
+    matrix_results{ii,2}=filename(1:6);
     clearvars -except ii files dataFolder matrix_results Fixation_Stimulus Individual_Group Location
 end
